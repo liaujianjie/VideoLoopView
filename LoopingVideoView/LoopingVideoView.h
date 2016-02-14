@@ -6,7 +6,7 @@
 //  Copyright © 2016 Liau Jian Jie. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 //! Project version number for LoopingVideoView.
 FOUNDATION_EXPORT double LoopingVideoViewVersionNumber;

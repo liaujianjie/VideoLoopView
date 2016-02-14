@@ -8,27 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0F2D259E1C706DF500B438E4 /* LoopingVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2D259D1C706DF500B438E4 /* LoopingVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F2D25A51C706DF500B438E4 /* LoopingVideoView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2D259A1C706DF400B438E4 /* LoopingVideoView.framework */; };
-		0F2D25AA1C706DF500B438E4 /* LoopingVideoViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D25A91C706DF500B438E4 /* LoopingVideoViewTests.swift */; };
+		0F2D25BB1C706EAD00B438E4 /* LoopingVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D25BA1C706EAD00B438E4 /* LoopingVideoView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0F2D25A61C706DF500B438E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F2D25911C706DF400B438E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0F2D25991C706DF400B438E4;
-			remoteInfo = LoopingVideoView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0F2D259A1C706DF400B438E4 /* LoopingVideoView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoopingVideoView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F2D259D1C706DF500B438E4 /* LoopingVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopingVideoView.h; sourceTree = "<group>"; };
 		0F2D259F1C706DF500B438E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F2D25A41C706DF500B438E4 /* LoopingVideoViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopingVideoViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F2D25A91C706DF500B438E4 /* LoopingVideoViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingVideoViewTests.swift; sourceTree = "<group>"; };
-		0F2D25AB1C706DF500B438E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F2D25BA1C706EAD00B438E4 /* LoopingVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopingVideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F2D25A11C706DF500B438E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F2D25A51C706DF500B438E4 /* LoopingVideoView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				0F2D259C1C706DF400B438E4 /* LoopingVideoView */,
-				0F2D25A81C706DF500B438E4 /* LoopingVideoViewTests */,
 				0F2D259B1C706DF400B438E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				0F2D259A1C706DF400B438E4 /* LoopingVideoView.framework */,
-				0F2D25A41C706DF500B438E4 /* LoopingVideoViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,18 +49,10 @@
 			isa = PBXGroup;
 			children = (
 				0F2D259D1C706DF500B438E4 /* LoopingVideoView.h */,
+				0F2D25BA1C706EAD00B438E4 /* LoopingVideoView.swift */,
 				0F2D259F1C706DF500B438E4 /* Info.plist */,
 			);
 			path = LoopingVideoView;
-			sourceTree = "<group>";
-		};
-		0F2D25A81C706DF500B438E4 /* LoopingVideoViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				0F2D25A91C706DF500B438E4 /* LoopingVideoViewTests.swift */,
-				0F2D25AB1C706DF500B438E4 /* Info.plist */,
-			);
-			path = LoopingVideoViewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,24 +87,6 @@
 			productReference = 0F2D259A1C706DF400B438E4 /* LoopingVideoView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0F2D25A31C706DF500B438E4 /* LoopingVideoViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0F2D25B11C706DF500B438E4 /* Build configuration list for PBXNativeTarget "LoopingVideoViewTests" */;
-			buildPhases = (
-				0F2D25A01C706DF500B438E4 /* Sources */,
-				0F2D25A11C706DF500B438E4 /* Frameworks */,
-				0F2D25A21C706DF500B438E4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0F2D25A71C706DF500B438E4 /* PBXTargetDependency */,
-			);
-			name = LoopingVideoViewTests;
-			productName = LoopingVideoViewTests;
-			productReference = 0F2D25A41C706DF500B438E4 /* LoopingVideoViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,9 +98,6 @@
 				ORGANIZATIONNAME = "Liau Jian Jie";
 				TargetAttributes = {
 					0F2D25991C706DF400B438E4 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
-					0F2D25A31C706DF500B438E4 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -167,20 +115,12 @@
 			projectRoot = "";
 			targets = (
 				0F2D25991C706DF400B438E4 /* LoopingVideoView */,
-				0F2D25A31C706DF500B438E4 /* LoopingVideoViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0F2D25981C706DF400B438E4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0F2D25A21C706DF500B438E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,26 +134,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0F2D25A01C706DF500B438E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F2D25AA1C706DF500B438E4 /* LoopingVideoViewTests.swift in Sources */,
+				0F2D25BB1C706EAD00B438E4 /* LoopingVideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0F2D25A71C706DF500B438E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0F2D25991C706DF400B438E4 /* LoopingVideoView */;
-			targetProxy = 0F2D25A61C706DF500B438E4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0F2D25AC1C706DF500B438E4 /* Debug */ = {
@@ -308,6 +233,7 @@
 		0F2D25AF1C706DF500B438E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +244,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liau-jian-jie.LoopingVideoView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0F2D25B01C706DF500B438E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -334,26 +262,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liau-jian-jie.LoopingVideoView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		0F2D25B21C706DF500B438E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LoopingVideoViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.liau-jian-jie.LoopingVideoViewTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		0F2D25B31C706DF500B438E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LoopingVideoViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.liau-jian-jie.LoopingVideoViewTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -374,14 +282,6 @@
 			buildConfigurations = (
 				0F2D25AF1C706DF500B438E4 /* Debug */,
 				0F2D25B01C706DF500B438E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		0F2D25B11C706DF500B438E4 /* Build configuration list for PBXNativeTarget "LoopingVideoViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0F2D25B21C706DF500B438E4 /* Debug */,
-				0F2D25B31C706DF500B438E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
