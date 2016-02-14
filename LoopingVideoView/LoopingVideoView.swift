@@ -17,11 +17,6 @@ public class LoopingVideoView: UIView {
             }
         }
     }
-    @IBInspectable public var videoUrlString: String? {
-        didSet {
-            self.videoUrl = NSURL.init(fileURLWithPath: videoUrlString!)
-        }
-    }
     @IBInspectable public var muted: Bool = true {
         didSet {
             self.player?.muted = self.muted
@@ -36,10 +31,12 @@ public class LoopingVideoView: UIView {
                 self.player!.muted = self.muted
                 NSNotificationCenter.defaultCenter().removeObserver(self)
                 NSNotificationCenter.defaultCenter().addObserver(self,
-                    selector: "playerItemDidReachEnd",
+                    selector: "playerItemDidReachEnd:",
                     name: AVPlayerItemDidPlayToEndTimeNotification,
                     object: playerItem)
+                self.playerLayer.player = self.player
                 self.player!.play()
+                self.layoutSubviews()
             }
         }
     }
@@ -68,14 +65,6 @@ public class LoopingVideoView: UIView {
         
         {
             self.videoUrl = videoUrl;
-        }()
-    }
-    
-    public init(videoUrlString: String) {
-        self.init();
-        
-        {
-            self.videoUrlString = videoUrlString;
         }()
     }
     
