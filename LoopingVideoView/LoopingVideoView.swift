@@ -10,25 +10,25 @@ import UIKit
 import AVFoundation
 
 public class LoopingVideoView: UIView {
-    var videoUrl: NSURL? {
+    public var videoUrl: NSURL? {
         didSet {
             if let _ = videoUrl {
                 self.playerItem = AVPlayerItem.init(URL: self.videoUrl!)
             }
         }
     }
-    @IBInspectable var videoUrlString: String? {
+    @IBInspectablepublic  var videoUrlString: String? {
         didSet {
             self.videoUrl = NSURL.init(fileURLWithPath: videoUrlString!)
         }
     }
-    @IBInspectable var muted: Bool = true {
+    @IBInspectablepublic  var muted: Bool = true {
         didSet {
             self.player?.muted = self.muted
         }
     }
-    var player: AVPlayer?
-    var playerItem: AVPlayerItem? {
+    public var player: AVPlayer?
+    public var playerItem: AVPlayerItem? {
         didSet {
             if let playerItem = self.playerItem {
                 self.player = AVPlayer.init(playerItem: playerItem)
@@ -43,7 +43,7 @@ public class LoopingVideoView: UIView {
             }
         }
     }
-    let playerLayer: AVPlayerLayer = AVPlayerLayer.init()
+    public let playerLayer: AVPlayerLayer = AVPlayerLayer.init()
     
     // MARK:- View Lifecycle
     
