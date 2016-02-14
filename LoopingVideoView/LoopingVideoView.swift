@@ -17,12 +17,12 @@ public class LoopingVideoView: UIView {
             }
         }
     }
-    @IBInspectablepublic  var videoUrlString: String? {
+    @IBInspectable public var videoUrlString: String? {
         didSet {
             self.videoUrl = NSURL.init(fileURLWithPath: videoUrlString!)
         }
     }
-    @IBInspectablepublic  var muted: Bool = true {
+    @IBInspectable public var muted: Bool = true {
         didSet {
             self.player?.muted = self.muted
         }
