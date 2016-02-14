@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint LoopingVideoView.podspec' to ensure this is a
+#  Be sure to run `pod spec lint VideoLoopView.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,15 +15,15 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "LoopingVideoView"
+  s.name         = "VideoLoopView"
   s.version      = "1.0.0"
-  s.summary      = "a simple UIView subclass that loops a video written in swift"
+  s.summary      = "a simple UIView subclass that continuously loops a video"
 
   s.description  = <<-DESC
                    A simple UIView subclass that loops a video written in Swift, useful for videos on onboarding implementations. Start using with only one or two lines of code!
                    DESC
 
-  s.homepage     = "https://github.com/liaujianjie/LoopingVideoView"
+  s.homepage     = "https://github.com/liaujianjie/VideoLoopView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/liaujianjie/LoopingVideoView.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/liaujianjie/VideoLoopView.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -84,7 +84,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LoopingVideoView", "LoopingVideoView/**/*.{h,m,swift}"
+  s.source_files  = "VideoLoopView", "VideoLoopView/**/*.{h,m,swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

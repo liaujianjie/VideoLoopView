@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F2D25991C706DF400B438E4"
-               BuildableName = "LoopingVideoView.framework"
-               BlueprintName = "LoopingVideoView"
-               ReferencedContainer = "container:LoopingVideoView.xcodeproj">
+               BlueprintIdentifier = "0F2D26571C70C9FC00B438E4"
+               BuildableName = "VideoLoopView.framework"
+               BlueprintName = "VideoLoopView"
+               ReferencedContainer = "container:VideoLoopView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,17 +35,17 @@
                BlueprintIdentifier = "0F2D25A31C706DF500B438E4"
                BuildableName = "LoopingVideoViewTests.xctest"
                BlueprintName = "LoopingVideoViewTests"
-               ReferencedContainer = "container:LoopingVideoView.xcodeproj">
+               ReferencedContainer = "container:VideoLoopView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0F2D25991C706DF400B438E4"
-            BuildableName = "LoopingVideoView.framework"
-            BlueprintName = "LoopingVideoView"
-            ReferencedContainer = "container:LoopingVideoView.xcodeproj">
+            BlueprintIdentifier = "0F2D26571C70C9FC00B438E4"
+            BuildableName = "VideoLoopView.framework"
+            BlueprintName = "VideoLoopView"
+            ReferencedContainer = "container:VideoLoopView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,10 +64,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0F2D25991C706DF400B438E4"
-            BuildableName = "LoopingVideoView.framework"
-            BlueprintName = "LoopingVideoView"
-            ReferencedContainer = "container:LoopingVideoView.xcodeproj">
+            BlueprintIdentifier = "0F2D26571C70C9FC00B438E4"
+            BuildableName = "VideoLoopView.framework"
+            BlueprintName = "VideoLoopView"
+            ReferencedContainer = "container:VideoLoopView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,10 +82,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0F2D25991C706DF400B438E4"
-            BuildableName = "LoopingVideoView.framework"
-            BlueprintName = "LoopingVideoView"
-            ReferencedContainer = "container:LoopingVideoView.xcodeproj">
+            BlueprintIdentifier = "0F2D26571C70C9FC00B438E4"
+            BuildableName = "VideoLoopView.framework"
+            BlueprintName = "VideoLoopView"
+            ReferencedContainer = "container:VideoLoopView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
