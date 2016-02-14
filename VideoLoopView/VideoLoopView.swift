@@ -1,6 +1,6 @@
 //
-//  LoopingVideoView.swift
-//  LoopingVideoView
+//  VideoLoopView.swift
+//  VideoLoopView
 //
 //  Created by Jian Jie on 14/2/16.
 //  Copyright © 2016 Liau Jian Jie. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-public class LoopingVideoView: UIView {
+public class VideoLoopView: UIView {
     public var videoUrl: NSURL? {
         didSet {
             if let _ = videoUrl {
@@ -71,7 +71,7 @@ public class LoopingVideoView: UIView {
     override public func layoutSubviews() {
         super.layoutSubviews()
         
-        // update AVPlayerLayer frame when LoopingVideoView has been resized
+        // update AVPlayerLayer frame when VideoLoopView has been resized
         var newFrame = self.frame
         newFrame.origin = CGPointZero
         self.playerLayer.frame = newFrame

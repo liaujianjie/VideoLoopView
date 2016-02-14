@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F2D259E1C706DF500B438E4 /* LoopingVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2D259D1C706DF500B438E4 /* LoopingVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F2D25BB1C706EAD00B438E4 /* LoopingVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D25BA1C706EAD00B438E4 /* LoopingVideoView.swift */; };
+		0F2D266D1C70D35900B438E4 /* VideoLoopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2D266C1C70D32100B438E4 /* VideoLoopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F2D26731C70D3CE00B438E4 /* VideoLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D26401C70C94000B438E4 /* VideoLoopView.swift */; };
+		0F2D26741C70D3D200B438E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2D26421C70C94000B438E4 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F2D259A1C706DF400B438E4 /* LoopingVideoView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoopingVideoView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F2D259D1C706DF500B438E4 /* LoopingVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopingVideoView.h; sourceTree = "<group>"; };
-		0F2D259F1C706DF500B438E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F2D25BA1C706EAD00B438E4 /* LoopingVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopingVideoView.swift; sourceTree = "<group>"; };
+		0F2D26401C70C94000B438E4 /* VideoLoopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoLoopView.swift; path = VideoLoopView/VideoLoopView.swift; sourceTree = SOURCE_ROOT; };
+		0F2D26421C70C94000B438E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = VideoLoopView/Info.plist; sourceTree = SOURCE_ROOT; };
+		0F2D26581C70C9FC00B438E4 /* VideoLoopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VideoLoopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2D266C1C70D32100B438E4 /* VideoLoopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VideoLoopView.h; path = VideoLoopView/VideoLoopView.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0F2D25961C706DF400B438E4 /* Frameworks */ = {
+		0F2D26541C70C9FC00B438E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,7 +33,7 @@
 		0F2D25901C706DF400B438E4 = {
 			isa = PBXGroup;
 			children = (
-				0F2D259C1C706DF400B438E4 /* LoopingVideoView */,
+				0F2D259C1C706DF400B438E4 /* VideoLoopView */,
 				0F2D259B1C706DF400B438E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,51 +41,52 @@
 		0F2D259B1C706DF400B438E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F2D259A1C706DF400B438E4 /* LoopingVideoView.framework */,
+				0F2D26581C70C9FC00B438E4 /* VideoLoopView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0F2D259C1C706DF400B438E4 /* LoopingVideoView */ = {
+		0F2D259C1C706DF400B438E4 /* VideoLoopView */ = {
 			isa = PBXGroup;
 			children = (
-				0F2D259D1C706DF500B438E4 /* LoopingVideoView.h */,
-				0F2D25BA1C706EAD00B438E4 /* LoopingVideoView.swift */,
-				0F2D259F1C706DF500B438E4 /* Info.plist */,
+				0F2D26401C70C94000B438E4 /* VideoLoopView.swift */,
+				0F2D26421C70C94000B438E4 /* Info.plist */,
+				0F2D266C1C70D32100B438E4 /* VideoLoopView.h */,
 			);
+			name = VideoLoopView;
 			path = LoopingVideoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0F2D25971C706DF400B438E4 /* Headers */ = {
+		0F2D26551C70C9FC00B438E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F2D259E1C706DF500B438E4 /* LoopingVideoView.h in Headers */,
+				0F2D266D1C70D35900B438E4 /* VideoLoopView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0F2D25991C706DF400B438E4 /* LoopingVideoView */ = {
+		0F2D26571C70C9FC00B438E4 /* VideoLoopView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F2D25AE1C706DF500B438E4 /* Build configuration list for PBXNativeTarget "LoopingVideoView" */;
+			buildConfigurationList = 0F2D265D1C70C9FC00B438E4 /* Build configuration list for PBXNativeTarget "VideoLoopView" */;
 			buildPhases = (
-				0F2D25951C706DF400B438E4 /* Sources */,
-				0F2D25961C706DF400B438E4 /* Frameworks */,
-				0F2D25971C706DF400B438E4 /* Headers */,
-				0F2D25981C706DF400B438E4 /* Resources */,
+				0F2D26531C70C9FC00B438E4 /* Sources */,
+				0F2D26541C70C9FC00B438E4 /* Frameworks */,
+				0F2D26551C70C9FC00B438E4 /* Headers */,
+				0F2D26561C70C9FC00B438E4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LoopingVideoView;
-			productName = LoopingVideoView;
-			productReference = 0F2D259A1C706DF400B438E4 /* LoopingVideoView.framework */;
+			name = VideoLoopView;
+			productName = VideoLoopView;
+			productReference = 0F2D26581C70C9FC00B438E4 /* VideoLoopView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -97,12 +99,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Liau Jian Jie";
 				TargetAttributes = {
-					0F2D25991C706DF400B438E4 = {
+					0F2D26571C70C9FC00B438E4 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 0F2D25941C706DF400B438E4 /* Build configuration list for PBXProject "LoopingVideoView" */;
+			buildConfigurationList = 0F2D25941C706DF400B438E4 /* Build configuration list for PBXProject "VideoLoopView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,27 +116,28 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F2D25991C706DF400B438E4 /* LoopingVideoView */,
+				0F2D26571C70C9FC00B438E4 /* VideoLoopView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0F2D25981C706DF400B438E4 /* Resources */ = {
+		0F2D26561C70C9FC00B438E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2D26741C70D3D200B438E4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0F2D25951C706DF400B438E4 /* Sources */ = {
+		0F2D26531C70C9FC00B438E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F2D25BB1C706EAD00B438E4 /* LoopingVideoView.swift in Sources */,
+				0F2D26731C70D3CE00B438E4 /* VideoLoopView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,36 +233,33 @@
 			};
 			name = Release;
 		};
-		0F2D25AF1C706DF500B438E4 /* Debug */ = {
+		0F2D265E1C70C9FC00B438E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LoopingVideoView/Info.plist;
+				INFOPLIST_FILE = VideoLoopView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.liau-jian-jie.LoopingVideoView";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liau-jian-jie.VideoLoopView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		0F2D25B01C706DF500B438E4 /* Release */ = {
+		0F2D265F1C70C9FC00B438E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LoopingVideoView/Info.plist;
+				INFOPLIST_FILE = VideoLoopView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.liau-jian-jie.LoopingVideoView";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liau-jian-jie.VideoLoopView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -268,7 +268,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F2D25941C706DF400B438E4 /* Build configuration list for PBXProject "LoopingVideoView" */ = {
+		0F2D25941C706DF400B438E4 /* Build configuration list for PBXProject "VideoLoopView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F2D25AC1C706DF500B438E4 /* Debug */,
@@ -277,13 +277,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F2D25AE1C706DF500B438E4 /* Build configuration list for PBXNativeTarget "LoopingVideoView" */ = {
+		0F2D265D1C70C9FC00B438E4 /* Build configuration list for PBXNativeTarget "VideoLoopView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F2D25AF1C706DF500B438E4 /* Debug */,
-				0F2D25B01C706DF500B438E4 /* Release */,
+				0F2D265E1C70C9FC00B438E4 /* Debug */,
+				0F2D265F1C70C9FC00B438E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

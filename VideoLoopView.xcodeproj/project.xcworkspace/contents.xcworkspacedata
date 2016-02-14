@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LoopingVideoView.xcodeproj">
+      location = "self:/Users/jianjie/Documents/Git/LoopingVideoView/VideoLoopView.xcodeproj">
    </FileRef>
 </Workspace>
