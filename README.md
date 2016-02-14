@@ -39,7 +39,7 @@ VideoLoopView *videoView = [[VideoLoopView alloc] initWithVideoUrl:videoUrl];
 
 ### Other properties
 * `muted` - mutes/unmutes the video, muted by default
-* For others, see [VideoLoopView.swift](VideoLoopView/VideoLoopView/VideoLoopView.swift)
+* For others, see [VideoLoopView.swift](VideoLoopView/VideoLoopView.swift)
 
 ## Author
 Written by [Liau Jian Jie](https://twitter.com/jianjie_).
