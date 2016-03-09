@@ -85,6 +85,7 @@ public class VideoLoopView: UIView {
     
     func setup() {
         self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        self.playerLayer.backgroundColor = UIColor.clearColor().CGColor
     }
     
     // MARK:- Controls
