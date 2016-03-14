@@ -25,16 +25,18 @@ public class VideoLoopView: UIView {
     public var player: AVPlayer?
     public var playerItem: AVPlayerItem? {
         didSet {
+            NSNotificationCenter.defaultCenter().removeObserver(self)
+            
             if let playerItem = self.playerItem {
-                self.player = AVPlayer.init(playerItem: playerItem)
+                self.player = AVPlayer(playerItem: playerItem)
                 self.player!.actionAtItemEnd = .None
                 self.player!.muted = self.muted
-                NSNotificationCenter.defaultCenter().removeObserver(self)
-                NSNotificationCenter.defaultCenter().addObserver(self,
-                    selector: "playerItemDidReachEnd:",
-                    name: AVPlayerItemDidPlayToEndTimeNotification,
-                    object: playerItem)
                 self.playerLayer.player = self.player
+                
+                NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerItemDidReachEnd:", name: AVPlayerItemDidPlayToEndTimeNotification, object: playerItem)
+                NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerWillEnterForeground", name: UIApplicationWillEnterForegroundNotification, object: nil)
+                NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerDidEnterBackground", name: UIApplicationDidEnterBackgroundNotification, object: nil)
+                
                 self.player!.play()
                 self.layoutSubviews()
             }
@@ -46,7 +48,6 @@ public class VideoLoopView: UIView {
     
     override public init(frame: CGRect) {
         super.init(frame: frame);
-        
         {
             self.setup()
         }()
@@ -54,7 +55,6 @@ public class VideoLoopView: UIView {
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
-        
         {
             self.setup()
         }()
@@ -62,7 +62,6 @@ public class VideoLoopView: UIView {
     
     public init(videoUrl: NSURL) {
         self.init();
-        
         {
             self.videoUrl = videoUrl;
         }()
@@ -104,4 +103,17 @@ public class VideoLoopView: UIView {
         let playerItem = notification.object as! AVPlayerItem
         playerItem.seekToTime(kCMTimeZero)
     }
+    
+    func playerWillEnterForeground() {
+        if self.player != nil {
+            self.player!.play()
+        }
+    }
+    
+    func playerDidEnterBackground() {
+        if self.player != nil {
+            self.player?.pause()
+        }
+    }
+    
 }
